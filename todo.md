@@ -27,3 +27,7 @@
 - [x] Add backend history round-trip verification coverage
 - [x] Add frontend tests for validation, read-only reports, exact metrics, and history states
 - [x] Re-run all checks and save the corrected final checkpoint
+- [x] Fix deployment dependency pin: numpy==2.5.2 is unavailable for the deployment image Python version
+- [x] Verify Python requirements install and frozen inference under a compatible NumPy version
+- [x] Re-run typecheck, tests, and production build after the deployment fix
+- [x] Save a corrected checkpoint for republishing
