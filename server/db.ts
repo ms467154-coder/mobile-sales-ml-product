@@ -1,6 +1,6 @@
 import { eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { InsertUser, users } from "../drizzle/schema";
+import { InsertInferenceHistory, InferenceHistory, InsertUser, inferenceHistory, users } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
 let _db: ReturnType<typeof drizzle> | null = null;
@@ -89,4 +89,18 @@ export async function getUserByOpenId(openId: string) {
   return result.length > 0 ? result[0] : undefined;
 }
 
-// TODO: add feature queries here as your schema grows.
+export async function createInferenceHistory(row: InsertInferenceHistory): Promise<InferenceHistory> {
+  const db = await getDb();
+  if (!db) throw new Error("Inference history persistence is unavailable");
+  const result = await db.insert(inferenceHistory).values(row);
+  const insertedId = Number(result[0].insertId);
+  const rows = await db.select().from(inferenceHistory).where(eq(inferenceHistory.id, insertedId)).limit(1);
+  if (!rows[0]) throw new Error("Inference history record was not returned after insert");
+  return rows[0];
+}
+
+export async function getInferenceHistory(limit = 50): Promise<InferenceHistory[]> {
+  const db = await getDb();
+  if (!db) throw new Error("Inference history persistence is unavailable");
+  return db.select().from(inferenceHistory).orderBy(inferenceHistory.createdAt).limit(Math.min(Math.max(limit, 1), 100));
+}

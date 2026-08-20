@@ -1,0 +1,13 @@
+{
+  "test": {
+    "mae": 15.085830927013841,
+    "rmse": 17.392348224432844,
+    "r2": -0.0008263228093412511,
+    "median_absolute_error": 15.0,
+    "p90_absolute_error": 27.0
+  },
+  "training_target_median": 31.0,
+  "test_rows": 10043,
+  "training_rows": 39957,
+  "selection_note": "No learned model was promoted; median benchmark frozen after Phase 10\u201311."
+}

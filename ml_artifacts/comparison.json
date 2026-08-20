@@ -1,0 +1,10 @@
+{
+  "dispatchDuration": {
+    "median": {"mae": 15.0858, "rmse": 17.3923, "r2": -0.0008, "label": "Median baseline"},
+    "ridge": {"mae": 15.0847, "rmse": 17.3889, "r2": -0.0004, "label": "Ridge"},
+    "histGradientBoosting": {"mae": 15.0880, "rmse": 17.3890, "r2": -0.0004, "label": "HistGradientBoosting"}
+  },
+  "quantitySold": {
+    "recovered": {"mae": 2.4957, "rmse": 2.8732, "r2": -0.0008, "label": "Recovered Quantity Sold model"}
+  }
+}

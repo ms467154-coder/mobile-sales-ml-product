@@ -1,0 +1,29 @@
+# Project TODO
+
+- [x] Map the frozen Dispatch Duration inference contract into shared product types
+- [x] Add database schema and persistence for inference history records
+- [x] Add backend metadata endpoint with exact model metrics and identifiers
+- [x] Add backend read-only phase-report catalog and markdown viewer data
+- [x] Add backend raw-input inference procedure that invokes the frozen pipeline
+- [x] Add backend inference-history query for persisted prediction requests
+- [x] Add server tests for inference validation, metadata, report catalog, and history persistence
+- [x] Build the ivory/dusty-red AI engineering dashboard shell and responsive navigation
+- [x] Build the overview dashboard with model status, target, prediction point, metrics, and limitations
+- [x] Build the raw-input prediction form for Product, Brand, Region, Price, and Inward Date
+- [x] Build the prediction result state with honest model-estimate language
+- [x] Build the model performance comparison chart/table for both targets
+- [x] Build the model information and feature-contract panels
+- [x] Build the limitations and trust panel with exact no-signal wording and failure modes
+- [x] Build the read-only browser for all 14 phase reports
+- [x] Build the recovered Quantity Sold model comparison card
+- [x] Build the persisted inference history log
+- [x] Add frontend tests for form validation, report read-only behavior, metric rendering, and history states
+- [x] Run typecheck, unit tests, and production build
+- [x] Capture responsive screenshots and refine visual quality
+- [x] Save the single initial checkpoint after all features and verification are complete
+- [x] Add shared inference and metadata contract types used by both server and client
+- [x] Apply and verify the inference-history database migration in the live database
+- [x] Make successful predictions require durable history persistence and surface persistence failures
+- [x] Add backend history round-trip verification coverage
+- [x] Add frontend tests for validation, read-only reports, exact metrics, and history states
+- [x] Re-run all checks and save the corrected final checkpoint

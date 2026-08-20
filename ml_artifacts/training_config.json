@@ -1,0 +1,28 @@
+{
+  "target": "Dispatch Duration = Dispatch Date - Inward Date",
+  "prediction_point": "At inward receipt, before dispatch",
+  "valid_features": [
+    "Product",
+    "Brand",
+    "Region",
+    "Price",
+    "Inward Date"
+  ],
+  "forbidden_features": [
+    "Dispatch Date",
+    "Dispatch Duration",
+    "Quantity Sold",
+    "Product Code",
+    "Product Specification",
+    "Customer Name",
+    "Customer Location"
+  ],
+  "model": "DummyRegressor(strategy=\"median\")",
+  "model_role": "Frozen operational benchmark; not a learned production model",
+  "random_seed": 42,
+  "test_start": "2024-10-25",
+  "fit_train_end": "2024-10-24",
+  "validation_period": "2023-10-01 through 2024-10-24; used for prior candidate selection, not refit here",
+  "test_period": "2024-10-25 through 2025-03-20",
+  "retraining_policy": "No test-period rows used for artifact fitting; retraining on train+validation requires a new approval."
+}

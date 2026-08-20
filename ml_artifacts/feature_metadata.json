@@ -1,0 +1,22 @@
+{
+  "raw_input_order": [
+    "Product",
+    "Brand",
+    "Region",
+    "Price",
+    "Inward Date"
+  ],
+  "input_validation": "FrozenRawInputValidator rejects forbidden fields and canonicalizes column order.",
+  "derived_features": "build_feature_frame plus Phase 5 DateFeatureExtractor and approved low-cardinality categorical preprocessing.",
+  "post_dispatch_excluded": [
+    "Dispatch Date",
+    "Dispatch Duration"
+  ],
+  "high_cardinality_excluded": [
+    "Product Code",
+    "Product Specification",
+    "Customer Name",
+    "Customer Location"
+  ],
+  "manual_preprocessing_required": false
+}
