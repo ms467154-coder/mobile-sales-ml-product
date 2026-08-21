@@ -2,7 +2,7 @@
 
 > A transparent audit and inference interface for a frozen dispatch-duration benchmark.
 
-[![CI](https://github.com/ms467154-coder/attrition-intelligence/actions/workflows/ci.yml/badge.svg)](https://github.com/ms467154-coder/attrition-intelligence/actions/workflows/ci.yml)
+[![CI](https://github.com/ms467154-coder/mobile-sales-ml-product/actions/workflows/ci.yml/badge.svg)](https://github.com/ms467154-coder/mobile-sales-ml-product/actions/workflows/ci.yml)
 
 Mobile Sales ML turns a 14-phase machine-learning audit into an inspectable product. It exposes the approved prediction-time input contract, serves exact evaluation metrics from frozen artifacts, records inference requests, and preserves the full audit trail as read-only reports.
 
