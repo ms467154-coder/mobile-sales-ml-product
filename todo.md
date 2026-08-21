@@ -31,3 +31,11 @@
 - [x] Verify Python requirements install and frozen inference under a compatible NumPy version
 - [x] Re-run typecheck, tests, and production build after the deployment fix
 - [x] Save a corrected checkpoint for republishing
+- [ ] Prepare a professional repository README with architecture, ML methodology, limitations, setup, and deployment notes
+- [ ] Add repository hygiene files and verify sensitive/build artifacts are excluded
+- [ ] Commit the complete project with a professional commit message
+- [ ] Push the project to ms467154-coder/attrition-intelligence
+- [ ] Verify the remote repository contents and README presentation
+- [ ] Create a new GitHub repository named mobile-sales-ml-product
+- [ ] Push the prepared Mobile Sales ML project to the new repository
+- [ ] Verify the new repository contents, README, and default branch
